@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="data:,">
+  <title>URL Shortener</title>
+</head>
+<body>
+  <main>
+    <section class="form-section">
+      <h1 class="page-title">URL Shortener</h1>
+      <form action="/" method="post">
+        <input class="url-input" type="text" placeholder="Paste in a link to shorten it"
+         name="URL">
+        <button type="submit" class="submit-button">Shorten!</button>
+      </form>
+    </section>
+    <section class="result-section">
+      <p>
+        <a href ="{{original_url}}">{{original_url}}</a> is now at <a id="shortened" href ="{{shortened_url}}">{{shortened_url}}</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

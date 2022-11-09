@@ -1,0 +1,17 @@
+<h1>URL Shortener</h1>
+
+<form method="POST" action="/">
+  <input
+    type="text"
+    name="URL"
+    placeholder="Paste a link to shorten"
+  />
+  <input type="submit" value="Go!"/>
+</form>
+
+<% if(it.shortened_url && it.original_url) {%>
+  <p>
+    <a href = "<%=it.original_url%>"><%= it.original_url %></a> is now at <a id="shortened" href = "<%=it.shortened_url%>"><%= it.shortened_url %></a>
+ </p>
+  
+<%}%>
